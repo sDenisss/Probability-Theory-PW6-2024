@@ -52,13 +52,11 @@ public class Methods {
         sheduleArrX = sheduleX.stream().mapToDouble(Double::doubleValue).toArray();
         sheduleArrY = sheduleY.stream().mapToDouble(Double::doubleValue).toArray();
 
-        setSheduleArrX(sheduleArrX);
-        setSheduleArrY(sheduleArrY);
-
+        setHisPolArrX(sheduleArrX);
+        setHisPolArrY(sheduleArrY);
     }
 
     public static void statisticalCaracteristics(double[] numbers) {
-
         System.out.println("Исходные данные:");
         for (double d : numbers) {
             System.out.print(d + " ");
@@ -146,6 +144,14 @@ public class Methods {
 
     public static double[] getSheduleArrY() {
         return sheduleArrY;
+    }
+
+    public static void setHisPolArrX(double[] sheduleArrX) {
+        Methods.sheduleArrX = sheduleArrX;
+    }
+
+    public static void setHisPolArrY(double[] sheduleArrY) {
+        Methods.sheduleArrY = sheduleArrY;
     }
 
     public static void setSheduleArrX(double[] sheduleArrX) {

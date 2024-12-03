@@ -42,24 +42,26 @@ public class XYLineChart_AWT extends ApplicationFrame {
       double[] numbers = Main.getNumbers(); // Пример данных
       Methods.statisticalCaracteristics(numbers); // Заполняет sheduleArrX и sheduleArrY
 
-      XYLineChart_POLYGON chart = new XYLineChart_POLYGON("Графики",
-            "График функции F(x):");
+      XYLineChart_AWT chart = new XYLineChart_AWT("Графики",
+            "Полигон приведенных частот группированной выборки:");
       chart.pack();
       RefineryUtilities.centerFrameOnScreen(chart);
       chart.setVisible(true);
    }
 
    private XYDataset createDataset() {
-      // Получаем массивы sheduleArrX и sheduleArrY из класса Methods
       double[] sheduleArrX = Methods.getSheduleArrX();
       double[] sheduleArrY = Methods.getSheduleArrY();
 
+      // for (double d : sheduleArrX) {
+      // System.out.println("x " + d);
+      // }
+
+      // for (double d : sheduleArrY) {
+      // System.out.println("y " + d);
+      // }
+
       final XYSeries scheduleSeries = new XYSeries("F(x)");
-      final XYSeries mark = new XYSeries("Mark");
-
-      mark.add(0.0, 0.0);
-      mark.add(0.0, 1.0);
-
       // Заполняем данные для графика
       for (int i = 0; i < sheduleArrX.length; i++) {
          scheduleSeries.add(sheduleArrX[i], sheduleArrY[i]);
@@ -68,10 +70,8 @@ public class XYLineChart_AWT extends ApplicationFrame {
          }
 
       }
-
       final XYSeriesCollection dataset = new XYSeriesCollection();
       dataset.addSeries(scheduleSeries);
-      dataset.addSeries(mark);
       return dataset;
    }
 
