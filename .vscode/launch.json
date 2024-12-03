@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "PT Hw Идз 19.1 — копия_c7c2e583"
+        },
+        {
+            "type": "java",
+            "name": "XYLineChart_POLYGON",
+            "request": "launch",
+            "mainClass": "XYLineChart_POLYGON",
+            "projectName": "PT Hw Идз 19.1_c51327dd"
+        },
+        {
+            "type": "java",
+            "name": "XYLineChart_HISTOGRAM",
+            "request": "launch",
+            "mainClass": "XYLineChart_HISTOGRAM",
+            "projectName": "PT Hw Идз 19.1_c51327dd"
+        },
+        {
+            "type": "java",
+            "name": "Histogram",
+            "request": "launch",
+            "mainClass": "Histogram",
+            "projectName": "PT Hw Идз 19.1_c51327dd"
+        },
+        {
+            "type": "java",
+            "name": "Bar2DDemo2",
+            "request": "launch",
+            "mainClass": "Bar2DDemo2",
+            "projectName": "PT Hw Идз 19.1_c51327dd"
+        },
+        {
+            "type": "java",
+            "name": "MeterChartDemo2",
+            "request": "launch",
+            "mainClass": "MeterChartDemo2",
+            "projectName": "PT Hw Идз 19.1_c51327dd"
+        },
+        {
+            "type": "java",
+            "name": "LineChartDemo6",
+            "request": "launch",
+            "mainClass": "LineChartDemo6",
+            "projectName": "PT Hw Идз 19.1_c51327dd"
+        },
+        {
+            "type": "java",
+            "name": "XYLineChart_AWT",
+            "request": "launch",
+            "mainClass": "XYLineChart_AWT",
+            "projectName": "PT Hw Идз 19.1_c51327dd"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "PT Hw Идз 19.1_c51327dd"
+        }
+    ]
+}
